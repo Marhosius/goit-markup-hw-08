@@ -1,14 +1,33 @@
 :root {
     --color-text:#757575;
     --color-title:#212121;
-    --color-logo1:#2196F3;
+    --color-logo:#2196F3;
     --color-onblack:#FFFFFF;
+    --color-downlink: #FFFFFF99;
+    --color-bgd-dark:#2F303A;
+    --color-text-btn-primery:#FFFFFF;
+    --color-brd-btn-primery:#2196F3;
+    --color-brdhov-btn-primery:#188CE8;
+    --color-text-btn-secondary:#212121;
+    --color-brd-btn-secondary:#F5F4FA;
+    --color-hov-btn-secondary:#FFFFFF;
+    --color-hovbrd-btn-secondary:#2196F3;
+
 }
 /* * {font-family: 'Raleway', sans-serif;
     font-family: 'Roboto', sans-serif;} */
     body {
         font-family: 'Roboto', sans-serif;
         color: var(--color-text);
+    }
+    .title {
+        font-family: 'Roboto';
+        font-weight: 700;
+        font-style: normal;
+        line-height: 1.2;
+        font-size: 36px;
+        letter-spacing: 0.03em;
+        color: var(--color-title);
     }
 /* HEADER */
 header {
@@ -20,24 +39,92 @@ header {
         font-family: 'Raleway';
             font-style: normal;
             font-weight: 700;
+            font-size: 26px;
+            line-height: 1.2;
             letter-spacing: 0.03em;
             text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
     .logo .logo-fw {
-        color: var(--color-logo1);
+        color: var(--color-logo);
     }
     .logo .logo-sw {
         color: black;
     }
     /* Navigation */
-    .nav-header {
+    
+    .navigation, .navigation-tel, .navigation-mail {
         text-decoration: none;
         font-family: 'Roboto';
             font-style: normal;
             font-weight: 500;
+            font-size: 14px;
+            line-height: 1.15;
             letter-spacing: 0.02em;
             color: var(--color-title);
     }
-    ul.nav-header::first-line {
-        color: var(--color-logo1);
+    .studio:active {
+        color: var(--color-logo);
     }
+    .navigation-mail:hover,.navigation-mail:focus, .navigation-tel:hover,.navigation-tel:focus {
+        color: var(--color-logo);
+    }
+
+/* HERO */
+.btn.btn-primary.btn-primary-hero {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+    text-align: center;
+}
+/* buttons */
+.btn {
+    color: var(--color-text);
+    background-color: transparent;
+    cursor: pointer;
+    border: transparent;
+    border-radius: 4px;
+}
+.btn.btn-primary {
+    color: var(--color-text-btn-primery);
+    background-color: var(--color-brd-btn-primery);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.btn.btn-primary:active {
+    background-color: var(--color-brdhov-btn-primery);
+}
+
+.btn.btn-secondary {
+    color: var(--color-text-btn-secondary);
+    background-color: var(--color-brd-btn-secondary);
+}
+.btn.btn-secondary:active {
+    color: var(--color-hov-btn-secondary);
+    background-color: var(--color-hovbrd-btn-secondary);
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--color-bgd-dark);
+}
+.logo-swf {
+    color: var(--color-onblack);
+}
+.foot-map, .foot-mail, .foot-tel {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+}
+.foot-map {
+    color: var(--color-onblack);
+}
+.foot-mail, .foot-tel {
+    color: var(--color-downlink);
+    
+}
+.foot-mail:hover, .foot-mail:focus, .foot-tel:hover, .foot-tel:focus {
+    color: var(--color-logo);
+}
