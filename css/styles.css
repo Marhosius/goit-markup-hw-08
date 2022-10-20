@@ -12,13 +12,14 @@
     --color-brd-btn-secondary:#F5F4FA;
     --color-hov-btn-secondary:#FFFFFF;
     --color-hovbrd-btn-secondary:#2196F3;
-
 }
-/* * {font-family: 'Raleway', sans-serif;
-    font-family: 'Roboto', sans-serif;} */
+
     body {
-        font-family: 'Roboto', sans-serif;
+        font-family: 'Roboto',Verdana, Tahoma, sans-serif;
         color: var(--color-text);
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.7;
     }
     .title {
         font-family: 'Roboto';
@@ -29,20 +30,64 @@
         letter-spacing: 0.03em;
         color: var(--color-title);
     }
-/* HEADER */
+.clear-dec {
+    text-decoration: none;
+    list-style: none;
+}
+.text-hiden {
+    visibility: hidden;
+    line-height: 0;
+    font-size: 0px;
+    letter-spacing: 0em;
+}
+/* !!!!!!!buttons!!!!!!!! */
+.btn {
+    color: var(--color-text);
+    font-family: 'Roboto',Verdana, Tahoma, sans-serif;
+    background-color: transparent;
+    cursor: pointer;
+    border: transparent;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+}
+.btn.btn-primary {
+    color: var(--color-text-btn-primery);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+    background-color: var(--color-brd-btn-primery);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.btn.btn-primary:active {
+    background-color: var(--color-brdhov-btn-primery);
+}
+
+.btn.btn-secondary {
+    color: var(--color-text-btn-secondary);
+    background-color: var(--color-brd-btn-secondary);
+}
+.btn.btn-secondary:hover,.btn.btn-secondary:focus {
+    color: var(--color-hov-btn-secondary);
+    background-color: var(--color-hovbrd-btn-secondary);
+}
+/* !!!!!!!buttons!!!!!!!! */
+/* -------------------------HEADER--------------------- */
 header {
     background-color:#FFFFFF;
 }
-    /* Logo */
-    .logo {
-        text-decoration: none;
+    /* -----------Logo----------- */
+    .logo {text-decoration: none;
         font-family: 'Raleway';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 26px;
-            line-height: 1.2;
-            letter-spacing: 0.03em;
-            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.2;
+        letter-spacing: 0.03em;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-style: normal;
     }
     .logo .logo-fw {
         color: var(--color-logo);
@@ -50,20 +95,21 @@ header {
     .logo .logo-sw {
         color: black;
     }
-    /* Navigation */
+    /* -----------Logo----------- */
+    /* ------------Navigation-------- */
     .navigation-ul {
         list-style: none;
         text-decoration: none;
-        list-style-type: none;
+        /* list-style-type: none; */
     }
     .navigation-ul, .navigation-tel, .navigation-mail {
-        text-decoration: none;
         font-family: 'Roboto';
-            font-style: normal;
-            font-weight: 500;
-            font-size: 14px;
-            line-height: 1.15;
-            letter-spacing: 0.02em;
+        text-decoration: none;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.15;
+        letter-spacing: 0.02em;
     }
     .navigation-tel,.navigation-mail {
         color: var(--color-text);
@@ -78,13 +124,16 @@ header {
     .navigation-mail:hover,.navigation-mail:focus, .navigation-tel:hover,.navigation-tel:focus {
         color: var(--color-logo);
     }
-
-/* HERO */
+    /* ------------Navigation-------- */
+    /* ------------------------HEADER--------------------- */
+/* ----------------------------HERO------------------------ */
 .hero {
     background-color: var(--color-bgd-dark);
 }
 .title.hero-title {
     color: var(--color-onblack);
+    text-transform: uppercase;
+    text-align: center;
 }
 .btn.btn-primary.btn-primary-hero {
     font-family: Roboto;
@@ -94,37 +143,40 @@ header {
     letter-spacing: 0.06em;
     text-align: center;
 }
+/* ----------------------------HERO------------------------ */
+/* ----------------------OurPrefferece---------------------- */
 .title.our-pref {
     font-size: 14px;
+    text-transform: uppercase;
 }
-/* buttons */
-.btn {
-    color: var(--color-text);
-    background-color: transparent;
-    cursor: pointer;
-    border: transparent;
-    border-radius: 4px;
+/* ----------------------OurPrefferece---------------------- */
+/* ----------------------OurTeem---------------------------- */
+.tite.our-team-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
 }
-.btn.btn-primary {
-    color: var(--color-text-btn-primery);
-    background-color: var(--color-brd-btn-primery);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+.our-team-p {
+    font-size: 16px;
+    line-height: 1.2;
 }
-.btn.btn-primary:active {
-    background-color: var(--color-brdhov-btn-primery);
+/* ----------------------OurTeem---------------------------- */
+
+/*!!!!!!!!!!!!!!!!!!!!!! PORTFOLIO !!!!!!!!!!!!!!!!!!!!!!!!!!*/
+.title.project-name {
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+.filter-text {
+    font-size: 16px;
+    line-height: 1.9px;
+    letter-spacing: 0.03em;
 }
 
-.btn.btn-secondary {
-    color: var(--color-text-btn-secondary);
-    background-color: var(--color-brd-btn-secondary);
-}
-.btn.btn-secondary:active {
-    color: var(--color-hov-btn-secondary);
-    background-color: var(--color-hovbrd-btn-secondary);
-}
-
-
-/* FOOTER */
+/* ----------------------FOOTER----------------------------- */
 footer {
     background-color: var(--color-bgd-dark);
 }
