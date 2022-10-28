@@ -14,13 +14,31 @@
     --color-hovbrd-btn-secondary:#2196F3;
 }
 
-    body {
+body {
         font-family: 'Roboto',Verdana, Tahoma, sans-serif;
         color: var(--color-text);
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
         line-height: 1.71;
+    }
+        /* Reset */
+h1, h2, h3, h4, h5, h6, p {
+            margin: 0;
+        }
+img {
+    display: block;
+}
+.clear-dec {
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+    /* Reset */
+    .section {
+        padding-top: 94px;
+        padding-bottom: 94px;
     }
     .title {
         font-weight: 700;
@@ -29,15 +47,21 @@
         letter-spacing: 0.03em;
         color: var(--color-title);
     }
-.clear-dec {
-    text-decoration: none;
-    list-style: none;
-}
+
 .text-hiden {
     visibility: hidden;
     line-height: 0;
     font-size: 0px;
     letter-spacing: 0em;
+}
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 2px solid orangered;
+    outline-offset: -2px;
 }
 /* !!!!!!!buttons!!!!!!!! */
 .btn {
@@ -60,6 +84,7 @@
     letter-spacing: 0.06em;
     background-color: var(--color-brd-btn-primery);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    padding: 10px 32px;
 }
 .btn.btn-primary:active {
     background-color: var(--color-brdhov-btn-primery);
@@ -68,6 +93,7 @@
 .btn.btn-secondary {
     color: var(--color-text-btn-secondary);
     background-color: var(--color-brd-btn-secondary);
+    padding: 6px 22px;
 }
 .btn.btn-secondary:hover,.btn.btn-secondary:focus {
     color: var(--color-hov-btn-secondary);
@@ -137,6 +163,10 @@ header {
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 0.06em;
+    padding-top: 200px;
+    margin-bottom: 30px;
+    max-width: 696px;
+
 }
 .btn.btn-primary.btn-primary-hero {
     font-size: 16px;
@@ -144,6 +174,10 @@ header {
     line-height: 1.88;
     letter-spacing: 0.06em;
     text-align: center;
+    margin-bottom: 200px;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
 }
 /* ----------------------------HERO------------------------ */
 /* ----------------------OurPrefferece---------------------- */
@@ -152,6 +186,9 @@ header {
     text-transform: uppercase;
 }
 /* ----------------------OurPrefferece---------------------- */
+.uppertitle {
+    margin-bottom: 50px;
+}
 /* ----------------------OurTeem---------------------------- */
 .title.our-team-name {
     font-weight: 500;
