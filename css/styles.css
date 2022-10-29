@@ -12,6 +12,8 @@
     --color-brd-btn-secondary:#F5F4FA;
     --color-hov-btn-secondary:#FFFFFF;
     --color-hovbrd-btn-secondary:#2196F3;
+    --items: 4;
+    --indent: 30px;
 }
 
 body {
@@ -152,7 +154,7 @@ header {
     /* ------------Navigation-------- */
     /* ------------------------HEADER--------------------- */
 /* ----------------------------HERO------------------------ */
-.hero {
+.hero-container {
     background-color: var(--color-bgd-dark);
 }
 .title.hero-title {
@@ -166,16 +168,19 @@ header {
     padding-top: 200px;
     margin-bottom: 30px;
     max-width: 696px;
+    margin-right: auto;
+    margin-left: auto;
 
 }
 .btn.btn-primary.btn-primary-hero {
+    display: inline-block;
     font-size: 16px;
     font-weight: 700;
     line-height: 1.88;
     letter-spacing: 0.06em;
     text-align: center;
     margin-bottom: 200px;
-    display: inline-block;
+    min-width: 216px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -185,22 +190,56 @@ header {
     font-size: 14px;
     text-transform: uppercase;
 }
-/* ----------------------OurPrefferece---------------------- */
+
+.our-prefs {
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+    gap: var(--indent);
+    padding-left: 0;
+}
+.our-prefs-list {
+    flex-basis: calc(100% - var(--indent)) * (var(--items) - 1) / var(--items);
+    
+}
+/* ----------------------OurPrefferece end---------------------- */
 .uppertitle {
     margin-bottom: 50px;
+    text-align: center;
 }
+/* What we do */
+.work-photo {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+    gap: var(--indent);
+}
+.work-photo-p {
+    flex-basis: calc(100% - var(--indent)) * (var(--items) - 1) / var(--items);
+}
+/* What we do  end*/
 /* ----------------------OurTeem---------------------------- */
 .title.our-team-name {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.03em;
+    text-align: center;
+}
+.our-team-workers {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    display: flex;
+    gap: var(--indent);
 }
 .our-team-p {
     font-size: 16px;
     line-height: 1.88;
+    text-align: center;
 }
-/* ----------------------OurTeem---------------------------- */
+/* ----------------------OurTeem end---------------------------- */
 
 /*!!!!!!!!!!!!!!!!!!!!!! PORTFOLIO !!!!!!!!!!!!!!!!!!!!!!!!!!*/
 .title.project-name {
