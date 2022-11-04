@@ -12,6 +12,7 @@
     --color-brd-btn-secondary:#F5F4FA;
     --color-hov-btn-secondary:#FFFFFF;
     --color-hovbrd-btn-secondary:#2196F3;
+    --color-socials-icon:rgba(175, 177, 184, 1);
     --items: 4;
     --indent: 30px;
     --flex-formula: calc((100% - var(--indent) * (var(--items) - 1)) / (var(--items)));
@@ -160,12 +161,20 @@ header {
     }
     .navigation-tel,.navigation-mail {
         color: var(--color-text);
+        display: flex;
+        gap: 10px;
         padding-top: 32px;
         padding-bottom: 32px;
+        align-items: center;
+    }
+    .mail-icon, .tel-icon {
+        fill: currentColor;
     }
     .studio,.portfolio,.kontact {
         color: var(--color-title);
         text-decoration: none;
+        padding-top: 32px;
+        padding-bottom: 32px;
     }
     .current {
         color: var(--color-logo);
@@ -225,6 +234,17 @@ header {
     gap: var(--indent);
     padding-left: 0;
 }
+.our-pref-tabet {
+    width: 270px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    background: var(--color-brd-btn-secondary);
+    border-radius: 4px;
+}
+
 .our-prefs-list {
     flex-basis: var(--flex-formula);
     
@@ -234,6 +254,7 @@ header {
     margin-bottom: 50px;
     text-align: center;
 }
+
 /* What we do */
 .work-photo {
     padding-left: 0;
@@ -250,6 +271,13 @@ header {
 .our-team-section {
     background-color: #F5F4FA;
     padding-top: 94px;
+}
+.card {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: var(--color-onblack);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .title.our-team-name {
@@ -275,14 +303,36 @@ header {
     line-height: 1.88;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 16px;
 }
-.card {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    background-color: var(--color-onblack);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
+.socials-list {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
 }
+.socials-icon {
+    fill: var(--color-socials-icon);
+}
+.social-link-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+
+.social-link-link:hover,
+.social-link-link:focus {
+    background-color: var(--color-hovbrd-btn-secondary);
+}
+.social-link-link:hover .socials-icon,
+.social-link-link:focus .socials-icon {
+    fill: var(--color-onblack);
+}
+
 /* ----------------------OurTeem end---------------------------- */
 
 /*!!!!!!!!!!!!!!!!!!!!!! PORTFOLIO !!!!!!!!!!!!!!!!!!!!!!!!!!*/
