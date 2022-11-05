@@ -12,7 +12,7 @@
     --color-brd-btn-secondary:#F5F4FA;
     --color-hov-btn-secondary:#FFFFFF;
     --color-hovbrd-btn-secondary:#2196F3;
-    --color-socials-icon:rgba(175, 177, 184, 1);
+    --color-socials-icon: #AFB1B8;
     --items: 4;
     --indent: 30px;
     --flex-formula: calc((100% - var(--indent) * (var(--items) - 1)) / (var(--items)));
@@ -481,7 +481,7 @@ address .foot-map {
     padding-left: 0;
 }
 
-.socials-icon {
+.socials-icon-footer {
     fill: var(--color-text-btn-primery);
 }
 
