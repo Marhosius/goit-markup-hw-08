@@ -8,9 +8,14 @@
 
   refs.openModalBtn.addEventListener("click", toggleModal);
   refs.closeModalBtn.addEventListener("click", toggleModal);
+  // refs.closeModalBtn.addEventListener("click", toggleModalLast);
 
   function toggleModal() {
     refs.modal.classList.toggle("is-hidden");
     refs.modalAnim.classList.toggle("is-animated");
+    // refs.modalAnim.classList.add("is-not-animated")
   }
+  // function toggleModalLast() {
+  //   refs.modalAnim.classList.remove("is-not-animated");
+  // }
 })();
