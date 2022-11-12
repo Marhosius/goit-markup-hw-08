@@ -83,7 +83,7 @@ img {
     font-size: 16px;
     line-height: 1.62;
     letter-spacing: 0.03em;
-    transition: color var(--anim-default), background-color var(--anim-default);
+    transition: color var(--anim-default), background-color var(--anim-default), filter var(--anim-default);
 }
 .btn.btn-primary {
     color: var(--color-text-btn-primery);
@@ -454,9 +454,7 @@ header {
     margin-top: 0;
     margin-bottom: 50px;
 }
-.btn-port {
-    transition: filter var(--anim-default);
-}
+
 .btn-port:hover,
 .btn-port:focus {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
