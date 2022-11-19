@@ -598,7 +598,8 @@ address .foot-map {
 .notification {
     width: 570px;
     height: 86px;
-    margin-left: 93px;
+    margin-left: auto;
+    margin-right: 0;
     position: relative;
 }
 
