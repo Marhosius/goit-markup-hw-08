@@ -595,7 +595,42 @@ address .foot-map {
 .social-link:focus {
     background-color: var(--color-hovbrd-btn-secondary);
 }
+.notification {
+    width: 570px;
+    height: 86px;
+    margin-left: 93px;
+    position: relative;
+}
 
+
+.btn.btn-primary.notification-btn {
+    width: 200px;
+    height: 50px;
+    padding: 10px 62px 10px 28px;
+    margin-left: 12px;
+}
+.notification-mail {
+    width: 354px;
+    height: 50px;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    text-align: left;
+    padding-left: 16px;
+    color: rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: transparent;
+}
+.notification-mail:focus .notification-mail {
+    outline: rgba(33, 150, 243, 0);
+}
+.notification-btn-icon {
+    position: absolute;
+    right: 28px;
+    bottom: 13px;
+}
 /* Modal Window */
 .backdrop {
     position: fixed;
