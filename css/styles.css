@@ -130,15 +130,15 @@ header {
         font-style: normal;
         align-items: center;
     }
-    .logo .logo-fw {
+    .logo .logo__fw {
         color: var(--color-logo);
     }
-    .logo .logo-sw {
+    .logo .logo__sw {
         color: black;
     }
     /* -----------Logo----------- */
     /* ------------Navigation-------- */
-    .navigation-ul {
+    .navigation__ul {
         list-style: none;
         text-decoration: none;
         display: flex;
@@ -149,19 +149,21 @@ header {
     .navigation {
         margin-left: 93px;
     }
-    .navigation-list {
+    .navigation__list {
         padding-top: 32px;
         padding-bottom: 32px;
         position: relative;
     }
-    .studio,
-    .portfolio,
-    .kontact {
+    .navigation__studio,
+    .navigation__portfolio,
+    .navigation__kontact {
         text-decoration: none;
         color: var(--color-title);
         transition: color var(--anim-default);
     }
-    .navigation-item::after {
+    .navigation__studio::after,
+    .navigation__portfolio::after,
+    .navigation__kontact::after {
         content: '';
         display: block;
         position: absolute;
@@ -175,18 +177,19 @@ header {
         background-color: var(--color-logo);
         opacity: 0;
     }
-    .current::after {
+    .navigation__studio--current::after,
+    .navigation__portfolio--current::after {
         animation: up-opacity 0.5s ease-in 250ms forwards;
     }
-    .studio:hover,
-    .portfolio:hover,
-    .kontact:hover,
-    .studio:focus,
-    .portfolio:focus,
-    .kontact:focus {
+    .navigation__studio:hover,
+    .navigation__portfolio:hover,
+    .navigation__kontact:hover,
+    .navigation__studio:focus,
+    .navigation__portfolio:focus,
+    .navigation__kontact:focus {
         color: var(--color-logo);
     }
-    .navigation-ul, .navigation-tel, .navigation-mail {
+    .navigation__ul, .navigation-tel, .navigation-mail {
         font-family: 'Roboto';
         text-decoration: none;
         font-style: normal;
@@ -528,7 +531,7 @@ footer {
     margin-bottom: 20px;
     display: inline-block;
 }
-.logo-swf {
+.logo__swf {
     color: var(--color-onblack);
 }
 .foot-map, .foot-mail, .foot-tel {
