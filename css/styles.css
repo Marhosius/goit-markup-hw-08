@@ -189,7 +189,7 @@ header {
     .navigation__kontact:focus {
         color: var(--color-logo);
     }
-    .navigation__ul, .navigation-tel, .navigation-mail {
+    .navigation__ul, .contacts__tel, .contacts__mail {
         font-family: 'Roboto';
         text-decoration: none;
         font-style: normal;
@@ -198,13 +198,16 @@ header {
         line-height: 1.15;
         letter-spacing: 0.02em;
     }
-    .navigation-mail {
+    
+    .contacts {
         margin-left: auto;
+        margin-right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap: 30px;
     }
-    .navigation-tel {
-        margin-left: 50px;
-    }
-    .navigation-tel,.navigation-mail {
+    .contacts__tel,.contacts__mail {
         color: var(--color-text);
         display: flex;
         gap: 10px;
@@ -213,17 +216,17 @@ header {
         align-items: center;
         transition: color var(--anim-default);
     }
-    .mail-icon, .tel-icon {
+    .contacts__mail-icon, .contacts__tel-icon {
         fill: currentColor;
     }
 
-    .navigation-mail:hover,.navigation-mail:focus, .navigation-tel:hover,.navigation-tel:focus {
+    .contacts__mail:hover, .contacts__mail:focus, .contacts__tel:hover, .contacts__tel:focus {
         color: var(--color-logo);
     }
     /* ------------NavigationEND-------- */
     /* ------------------------HEADER END--------------------- */
 /* ----------------------------HERO-------------------- url(/images/hero.jpg)---- */
-.hero {
+.hero-section {
     background-image:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     background-repeat: no-repeat;
@@ -235,7 +238,7 @@ header {
     padding-top: 200px;
     padding-bottom: 200px;
 }
-.title.hero-title {
+.hero__title {
     color: var(--color-onblack);
     font-weight: 900;
     font-size: 44px;
@@ -250,12 +253,8 @@ header {
 
 }
 
-.btn.btn-primary.btn-primary-hero {
+.hero__button {
     display: block;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
     min-width: 216px;
     min-height: 50px;
     margin-right: auto;
@@ -263,23 +262,23 @@ header {
 }
 /* ----------------------------HEROEND------------------------ */
 /* ----------------------OurPrefferece---------------------- */
-.our-pref-section {
+.benefit-section {
     padding-top: 94px;
 }
-.title.our-pref {
+.benefit__subtitle {
     font-size: 14px;
     text-transform: uppercase;
     margin-bottom: 10px;
 }
 
-.our-prefs {
+.benefit-set {
     margin-top: 0;
     margin-bottom: 0;
     display: flex;
     gap: var(--indent);
     padding-left: 0;
 }
-.our-pref-tabet {
+.benefit__tabet {
     width: 270px;
     height: 120px;
     display: flex;
@@ -290,7 +289,7 @@ header {
     border-radius: 4px;
 }
 
-.our-prefs-list {
+.benefit-set__list {
     flex-basis: var(--flex-formula);
     
 }
@@ -301,17 +300,17 @@ header {
 }
 
 /* What we do */
-.work-photo {
+.services {
     padding-left: 0;
     margin-top: 0;
     margin-bottom: 0;
     display: flex;
     gap: var(--indent);
 }
-.work-photo-box {
+.services__box {
     position: relative;
 }
-.work-photo-textbox {
+.services__textbox {
     position: absolute;
     width: 100%;
     height: 70px;
@@ -321,7 +320,7 @@ header {
     background: rgba(47, 48, 58, 0.8);
     border: 1px solid rgba(0, 0, 0, 1)
 }
-.work-photo-tex {
+.services__text {
     font-size: 14px;
     line-height: 1.15;
     letter-spacing: 0.03em;
@@ -329,16 +328,16 @@ header {
     text-transform: uppercase;
     color: var(--color-onblack);
 }
-.work-photo-p {
+.services__list {
     flex-basis: calc((100% - var(--indent) * (3 - 1)) / 3);
 }
 /* What we do  end*/
 /* ----------------------OurTeem---------------------------- */
-.our-team-section {
+.team-section {
     background-color: #F5F4FA;
     padding-top: 94px;
 }
-.card {
+.team__card {
     padding-top: 30px;
     padding-bottom: 30px;
     background-color: var(--color-onblack);
@@ -346,7 +345,7 @@ header {
     border-radius: 0px 0px 4px 4px;
 }
 
-.title.our-team-name {
+.team__name {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
@@ -354,35 +353,35 @@ header {
     text-align: center;
     margin-bottom: 10px;
 }
-.our-team-workers {
+.team {
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 0;
     display: flex;
     gap: var(--indent);
 }
-.our-team-list {
+.team__list {
     flex-basis: var(--flex-formula)
 }
-.our-team-p {
+.team__position {
     font-size: 16px;
     line-height: 1.88;
     text-align: center;
     letter-spacing: 0.03em;
     margin-bottom: 16px;
 }
-.socials-list {
+.socials {
     display: flex;
     gap: 10px;
     justify-content: center;
     align-items: center;
     padding-left: 0;
 }
-.socials-icon {
+.socials__icon {
     fill: var(--color-socials-icon);
     transition: fill var(--anim-default), background-color var(--anim-default);
 }
-.social-link-link {
+.social__reference {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -392,12 +391,12 @@ header {
     transition: fill var(--anim-default), background-color var(--anim-default);
 }
 
-.social-link-link:hover,
-.social-link-link:focus {
+.social__reference:hover,
+.social__reference:focus {
     background-color: var(--color-hovbrd-btn-secondary);
 }
-.social-link-link:hover .socials-icon,
-.social-link-link:focus .socials-icon {
+.social__reference:hover .socials__icon,
+.social__reference:focus .socials__icon {
     fill: var(--color-onblack);
 }
 
@@ -583,7 +582,7 @@ address .foot-map {
     fill: var(--color-text-btn-primery);
 }
 
-.social-link {
+.social__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -594,8 +593,8 @@ address .foot-map {
     transition: fill var(--anim-default), background-color var(--anim-default);
 }
 
-.social-link:hover,
-.social-link:focus {
+.social__link:hover,
+.social__link:focus {
     background-color: var(--color-hovbrd-btn-secondary);
 }
 .notification {
