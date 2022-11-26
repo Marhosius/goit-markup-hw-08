@@ -1,0 +1,22 @@
+:root {
+    --color-text: #757575;
+    --color-title: #212121;
+    --color-logo: #2196F3;
+    --color-onblack: #FFFFFF;
+    --color-downlink: #FFFFFF99;
+    --color-bgd-dark: #2F303A;
+    --color-text-btn-primery: #FFFFFF;
+    --color-brd-btn-primery: #2196F3;
+    --color-brdhov-btn-primery: #188CE8;
+    --color-text-btn-secondary: #212121;
+    --color-brd-btn-secondary: #F5F4FA;
+    --color-hov-btn-secondary: #FFFFFF;
+    --color-hovbrd-btn-secondary: #2196F3;
+    --color-socials-icon: #AFB1B8;
+    --items: 4;
+    --indent: 30px;
+    --flex-formula: calc((100% - var(--indent) * (var(--items) - 1)) / (var(--items)));
+    /* Animations */
+    --transform-centre: translateX(-50%) translateY(-50%);
+    --anim-default: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

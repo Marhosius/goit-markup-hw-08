@@ -1,0 +1,25 @@
+body {
+    font-family: 'Roboto', Verdana, Tahoma, sans-serif;
+    color: var(--color-text);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+/* Reset */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}

@@ -1,0 +1,33 @@
+.benefit-section {
+    padding-top: 94px;
+}
+
+.benefit__subtitle {
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.benefit-set {
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+    gap: var(--indent);
+    padding-left: 0;
+}
+
+.benefit__tabet {
+    width: 270px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    background: var(--color-brd-btn-secondary);
+    border-radius: 4px;
+}
+
+.benefit-set__list {
+    flex-basis: var(--flex-formula);
+
+}

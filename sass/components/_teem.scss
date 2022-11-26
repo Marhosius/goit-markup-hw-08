@@ -1,0 +1,74 @@
+.team-section {
+    background-color: #F5F4FA;
+    padding-top: 94px;
+}
+
+.team__card {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: var(--color-onblack);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team__name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.team {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    display: flex;
+    gap: var(--indent);
+}
+
+.team__list {
+    flex-basis: var(--flex-formula)
+}
+
+.team__position {
+    font-size: 16px;
+    line-height: 1.88;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 16px;
+}
+
+.socials {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+}
+
+.socials__icon {
+    fill: var(--color-socials-icon);
+    transition: fill var(--anim-default), background-color var(--anim-default);
+}
+
+.social__reference {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    transition: fill var(--anim-default), background-color var(--anim-default);
+}
+
+.social__reference:hover,
+.social__reference:focus {
+    background-color: var(--color-hovbrd-btn-secondary);
+}
+
+.social__reference:hover .socials__icon,
+.social__reference:focus .socials__icon {
+    fill: var(--color-onblack);
+}
