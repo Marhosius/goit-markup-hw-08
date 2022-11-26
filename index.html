@@ -454,78 +454,80 @@
       </section>
       <!-- PARTNERS -->
       <section class="partners-section section">
-        <div class="container">
-          <h2 class="title uppertitle partners-title">Постійні клієнти</h2>
+        <div class="partners-container container">
+          <h2 class="title uppertitle partners-container__title">
+            Постійні клієнти
+          </h2>
           <div>
-            <ul class="clear-dec partners-list">
-              <li class="clear-dec partners-li">
+            <ul class="clear-dec partners">
+              <li class="clear-dec partners__card">
                 <a
                   href="/index.html"
-                  class="partners-item"
+                  class="partners__link"
                   target="blank"
                   rel="noopener no-referrer"
                   aria-label="Посилання на сайт нашого партнера"
-                  ><svg class="partners-icon" width="106" height="60">
+                  ><svg class="partners__icon" width="106" height="60">
                     <use href="./images/icons.svg#icon-Logo-1"></use>
                   </svg>
                 </a>
               </li>
-              <li class="clear-dec partners-li">
+              <li class="clear-dec partners__card">
                 <a
                   href="/index.html"
-                  class="partners-item"
+                  class="partners__link"
                   target="blank"
                   rel="noopener no-referrer"
                   aria-label="Посилання на сайт нашого партнера"
-                  ><svg class="partners-icon" width="106" height="60">
+                  ><svg class="partners__icon" width="106" height="60">
                     <use href="./images/icons.svg#icon-Logo-2"></use>
                   </svg>
                 </a>
               </li>
-              <li class="clear-dec partners-li">
+              <li class="clear-dec partners__card">
                 <a
                   href="/index.html"
-                  class="partners-item"
+                  class="partners__link"
                   target="blank"
                   rel="noopener no-referrer"
                   aria-label="Посилання на сайт нашого партнера"
-                  ><svg class="partners-icon" width="106" height="60">
+                  ><svg class="partners__icon" width="106" height="60">
                     <use href="./images/icons.svg#icon-Logo-3"></use>
                   </svg>
                 </a>
               </li>
-              <li class="clear-dec partners-li">
+              <li class="clear-dec partners__card">
                 <a
                   href="/index.html"
-                  class="partners-item"
+                  class="partners__link"
                   target="blank"
                   rel="noopener no-referrer"
                   aria-label="Посилання на сайт нашого партнера"
-                  ><svg class="partners-icon" width="106" height="60">
+                  ><svg class="partners__icon" width="106" height="60">
                     <use href="./images/icons.svg#icon-Logo-4"></use>
                   </svg>
                 </a>
               </li>
-              <li class="clear-dec partners-li">
+              <li class="clear-dec partners__card">
                 <a
                   href="/index.html"
-                  class="partners-item"
+                  class="partners__link"
                   target="blank"
                   rel="noopener no-referrer"
                   aria-label="Посилання на сайт нашого партнера"
-                  ><svg class="partners-icon" width="106" height="60">
+                  ><svg class="partners__icon" width="106" height="60">
                     <use href="./images/icons.svg#icon-Logo-5"></use>
                   </svg>
                 </a>
               </li>
-              <li class="clear-dec partners-li">
+              <li class="clear-dec partners__card">
                 <a
                   href="/index.html"
-                  class="partners-item"
+                  class="partners__link"
                   target="blank"
                   rel="noopener no-referrer"
                   aria-label="Посилання на сайт нашого партнера"
-                  ><svg class="partners-icon" width="106" height="60">
+                  ><svg class="partners__icon" width="106" height="60">
                     <use href="./images/icons.svg#icon-Logo-6"></use>
                   </svg>
                 </a>
@@ -542,9 +544,9 @@
             <span class="logo__fw">Web</span>
             <span class="logo__swf">Studio</span>
           </a>
-          <address>
+          <address class="addres">
             <a
-              class="foot-map clear-dec"
+              class="addres__map clear-dec"
               href="https://goo.gl/maps/14XLptakAP6kPGwR9"
               target="_blank"
               rel="noopener noreferrer"
@@ -552,15 +554,21 @@
               м. Київ, пр-т Лесі Українки, 26
             </a>
           </address>
-          <a class="foot-mail clear-dec" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-          <a class="foot-tel" href="tel:+380961111111">+38 096 111 11 11</a>
+          <div class="footer-contacts">
+            <a
+              class="footer-contacts__mail clear-dec"
+              href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+            <a class="footer-contacts__tel" href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            >
+          </div>
         </div>
-        <div class="footer-socials-list-tablet">
-          <h3 class="title footer-social-title">Приєднуйтесь</h3>
-          <ul class="footer-socials-list">
-            <li class="clear-dec social-li">
+        <div class="footer-socialbox">
+          <h3 class="title footer-socialbox__title">Приєднуйтесь</h3>
+          <ul class="footer-socials">
+            <li class="clear-dec footer-socials__link">
               <a
                 href="https://www.instagram.com/"
                 class="social__reference"
@@ -568,12 +576,12 @@
                 rel="noopener no-referrer"
                 aria-label="instagram"
               >
-                <svg class="socials-icon-footer" width="20" height="20">
+                <svg class="v" width="20" height="20">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="clear-dec social-li">
+            <li class="clear-dec footer-socials__link">
               <a
                 href="https://twitter.com/"
                 class="social__reference"
@@ -581,12 +589,12 @@
                 rel="noopener no-referrer"
                 aria-label="tvitter"
               >
-                <svg class="socials-icon-footer" width="20" height="20">
+                <svg class="footer-socials__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-tvitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="clear-dec social-li">
+            <li class="clear-dec footer-socials__link">
               <a
                 href="https://www.facebook.com/"
                 class="social__reference"
@@ -594,12 +602,12 @@
                 rel="noopener no-referrer"
                 aria-label="facebook"
               >
-                <svg class="socials-icon-footer" width="20" height="20">
+                <svg class="footer-socials__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="clear-dec social-li">
+            <li class="clear-dec footer-socials__link">
               <a
                 href="https://www.linkedin.com/"
                 class="social__reference"
@@ -607,7 +615,7 @@
                 rel="noopener no-referrer"
                 aria-label="linkedin"
               >
-                <svg class="socials-icon-footer" width="20" height="20">
+                <svg class="footer-socials__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
               </a>
@@ -615,22 +623,22 @@
           </ul>
         </div>
         <div class="notification">
-          <p class="notification-title title footer-social-title">
+          <p class="notification-title title notification__title">
             Підпишіться на розсилку
           </p>
-          <form name="notification-form" class="notification-form">
+          <form name="notification__form" class="notification__form">
             <label>
               <input
                 type="mail"
-                name="notification-mail"
-                class="notification-mail"
+                name="notification__mail"
+                class="notification__mail"
                 placeholder="E-mail"
               />
             </label>
-            <button class="btn btn-primary notification-btn" type="submit">
+            <button class="btn btn-primary notification__button" type="submit">
               Підписатися
             </button>
-            <svg class="notification-btn-icon" width="24" height="24">
+            <svg class="notification__icon" width="24" height="24">
               <use href="./images/icons.svg#icon-send"></use>
             </svg>
           </form>

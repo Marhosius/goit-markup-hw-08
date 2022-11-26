@@ -406,13 +406,13 @@ header {
 .partners-section {
     padding-top: 94px;
 }
-.partners-list {
+.partners {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 30px;
 }
-.partners-item {
+.partners__link {
     width: 170px;
     height: 92px;
     display: flex;
@@ -423,16 +423,16 @@ header {
     border-radius: 4px;
     transition: fill var(--anim-default), border-color var(--anim-default);
 }
-.partners-icon {
+.partners__icon {
     fill: var(--color-socials-icon);
     transition: fill var(--anim-default);
 }
-.partners-item:hover .partners-icon,
-.partners-item:focus .partners-icon {
+.partners__link:hover .partners__icon,
+.partners__link:focus .partners__icon {
     fill: var(--color-brd-btn-primery);
 }
-.partners-item:hover,
-.partners-item:focus {
+.partners__link:hover,
+.partners__link:focus {
     border-color: var(--color-brd-btn-primery);
 }
 /* ----------------------Partners end---------------------------- */
@@ -533,52 +533,52 @@ footer {
 .logo__swf {
     color: var(--color-onblack);
 }
-.foot-map, .foot-mail, .foot-tel {
+.addres__map, .footer-contacts__mail, .footer-contacts__tel {
     text-decoration: none;
     transition: color var(--anim-default);
 }
 address {
     margin-bottom: 9px;
 }
-.foot-map {
+.addres__map {
     color: var(--color-onblack);
 }
-address .foot-map {
+.addres__map {
     font-style: normal;
 }
-.foot-mail {
+.footer-contacts__mail {
     margin-bottom: 9px;
 }
-.foot-mail, .foot-tel {
+.footer-contacts__mail, .footer-contacts__tel {
     color: var(--color-downlink);
     display: block;
 }
-.foot-mail:hover, .foot-mail:focus, .foot-tel:hover, .foot-tel:focus {
+.footer-contacts__mail:hover, .footer-contacts__mail:focus, .footer-contacts__tel:hover, .footer-contacts__tel:focus {
     color: var(--color-logo);
 }
 .footer-container {
     display: flex;
     align-items: baseline;
 }
-.footer-socials-list-tablet {
+.footer-socialbox {
     width: 206px;
     height: 80px;
     margin-left: 70px;
 }
-.footer-social-title {
+.footer-socialbox__title {
     font-size: 14px;
     text-transform: uppercase;
     color: rgba(255, 255, 255, 1);
     margin-bottom: 20px;
 }
-.footer-socials-list {
+.footer-socials {
     display: flex;
     gap: 10px;
     align-items: center;
     padding-left: 0;
 }
 
-.socials-icon-footer {
+.footer-socials__icon {
     fill: var(--color-text-btn-primery);
 }
 
@@ -606,13 +606,19 @@ address .foot-map {
 }
 
 
-.btn.btn-primary.notification-btn {
+.btn.btn-primary.notification__button {
     width: 200px;
     height: 50px;
     padding: 10px 62px 10px 28px;
     margin-left: 12px;
 }
-.notification-mail {
+.notification__title {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 20px;
+}
+.notification__mail {
     width: 354px;
     height: 50px;
     font-size: 16px;
@@ -627,11 +633,11 @@ address .foot-map {
     background-color: transparent;
     transition: outline var(--anim-default);
 }
-.notification-mail:focus {
+.notification__mail:focus {
     outline-offset: -1px;
     outline: 1px solid var(--color-logo);
 }
-.notification-btn-icon {
+.notification__icon {
     position: absolute;
     right: 28px;
     bottom: 13px;
