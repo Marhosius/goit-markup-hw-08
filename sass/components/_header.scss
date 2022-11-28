@@ -112,6 +112,7 @@ header {
 
 .contacts__tel,
 .contacts__mail {
+    @extend %clear-dec;
     color: var(--color-text);
     display: flex;
     gap: 10px;

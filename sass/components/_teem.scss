@@ -7,6 +7,10 @@
     @extend %container;
 }
 
+.team-container__title {
+    @extend %title;
+    @extend %uppertitle;
+}
 .team__card {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -16,6 +20,7 @@
 }
 
 .team__name {
+    @extend %title;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
@@ -33,6 +38,7 @@
 }
 
 .team__list {
+    @extend %clear-dec;
     flex-basis: var(--flex-formula)
 }
 
@@ -51,7 +57,9 @@
     align-items: center;
     padding-left: 0;
 }
-
+.social__link {
+    @extend %clear-dec;
+}
 .socials__icon {
     fill: var(--color-socials-icon);
     transition: fill var(--anim-default), background-color var(--anim-default);

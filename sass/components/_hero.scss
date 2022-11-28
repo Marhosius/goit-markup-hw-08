@@ -14,6 +14,7 @@
     @extend %container;
 }
 .hero__title {
+    @extend %title;
     color: var(--color-onblack);
     font-weight: 900;
     font-size: 44px;

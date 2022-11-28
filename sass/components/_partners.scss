@@ -4,13 +4,21 @@
 .partners-container {
     @extend %container;
 }
+
+.partners-container__title {
+    @extend %title;
+    @extend %uppertitle;
+}
 .partners {
+    @extend %clear-dec;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 30px;
 }
-
+.partners__card {
+    @extend %clear-dec;
+}
 .partners__link {
     width: 170px;
     height: 92px;

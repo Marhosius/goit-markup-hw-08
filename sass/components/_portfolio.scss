@@ -4,7 +4,12 @@
 .portfolio {
     @extend %container;
 }
-.title.task__name {
+.portfolio__title {
+    @extend %title;
+    @extend %text-hiden;
+}
+.task__name {
+    @extend %title;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
@@ -17,6 +22,9 @@
     justify-content: center;
     margin-top: 0;
     margin-bottom: 50px;
+}
+.buttons-list__item {
+    @extend %clear-dec;
 }
 .buttons-list__button {
     @extend %btn;
@@ -37,7 +45,9 @@
     flex-wrap: wrap;
     gap: var(--indent);
 }
-
+.task {
+    @extend %clear-dec;
+}
 .task__box {
     position: relative;
     overflow: hidden;
@@ -69,6 +79,7 @@
 }
 
 .filter-list__item {
+    @extend %clear-dec;
     border: 1px solid #EEEEEE;
     flex-basis: calc((100% - var(--indent) * (3 - 1)) / (3));
     transition: box-shadow var(--anim-default);

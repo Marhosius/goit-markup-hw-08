@@ -5,11 +5,14 @@
     @extend %container;
 }
 .benefit__subtitle {
+    @extend %title;
     font-size: 14px;
     text-transform: uppercase;
     margin-bottom: 10px;
 }
-
+.benefit__title {
+    @extend %text-hiden;
+}
 .benefit-set {
     margin-top: 0;
     margin-bottom: 0;
@@ -30,6 +33,7 @@
 }
 
 .benefit-set__list {
+    @extend %clear-dec;
     flex-basis: var(--flex-formula);
 
 }

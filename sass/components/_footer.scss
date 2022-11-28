@@ -18,6 +18,7 @@ footer {
 .addres__map,
 .footer-contacts__mail,
 .footer-contacts__tel {
+    @extend %clear-dec;
     text-decoration: none;
     transition: color var(--anim-default);
 }
@@ -73,6 +74,7 @@ address {
 }
 
 .footer-socialbox__title {
+    @extend %title;
     font-size: 14px;
     text-transform: uppercase;
     color: rgba(255, 255, 255, 1);
@@ -90,7 +92,8 @@ address {
     fill: var(--color-text-btn-primery);
 }
 
-.social__link {
+.footer-socials__link {
+    @extend %clear-dec;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -124,6 +127,7 @@ address {
 }
 
 .notification__title {
+    @extend %title;
     font-size: 14px;
     text-transform: uppercase;
     color: rgba(255, 255, 255, 1);

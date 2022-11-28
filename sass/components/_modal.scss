@@ -55,6 +55,7 @@
 }
 
 .modal__title {
+    @extend %title;
     font-size: 20px;
     letter-spacing: 0.03em;
     text-align: center;

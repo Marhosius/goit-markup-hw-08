@@ -21,25 +21,25 @@
   --anim-default: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clear-dec {
-  text-decoration: none;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-/* Reset */
 .footer-container, .portfolio, .partners-container, .team-container, .services-container, .benefit, .hero, .header-container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  /* outline: 2px solid orangered;
-  outline-offset: -2px; */
 }
 
-.title {
+.footer-socials__link, .addres__map,
+.footer-contacts__mail,
+.footer-contacts__tel, .filter-list__item, .task, .buttons-list__item, .partners__card, .partners, .social__link, .team__list, .services__list, .benefit-set__list, .contacts__tel,
+.contacts__mail {
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.modal__title, .notification__title, .footer-socialbox__title, .task__name, .portfolio__title, .partners-container__title, .team__name, .team-container__title, .services__text, .services-container__title, .benefit__subtitle, .hero__title {
   font-weight: 700;
   line-height: 1.16;
   font-size: 36px;
@@ -47,12 +47,12 @@
   color: var(--color-title);
 }
 
-.uppertitle {
+.partners-container__title, .team-container__title, .services-container__title {
   margin-bottom: 50px;
   text-align: center;
 }
 
-.text-hiden {
+.portfolio__title, .benefit__title {
   visibility: hidden;
   line-height: 0;
   font-size: 0px;
@@ -719,7 +719,7 @@ header {
   padding-bottom: 94px;
 }
 
-.title.task__name {
+.task__name {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -919,7 +919,7 @@ address {
   fill: var(--color-text-btn-primery);
 }
 
-.social__link {
+.footer-socials__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -936,7 +936,7 @@ address {
   -webkit-transition: fill var(--anim-default), background-color var(--anim-default);
   transition: fill var(--anim-default), background-color var(--anim-default);
 }
-.social__link:hover, .social__link:focus {
+.footer-socials__link:hover, .footer-socials__link:focus {
   background-color: var(--color-hovbrd-btn-secondary);
 }
 

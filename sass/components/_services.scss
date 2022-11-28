@@ -11,7 +11,10 @@
     display: flex;
     gap: var(--indent);
 }
-
+.services-container__title {
+    @extend %title;
+    @extend %uppertitle;
+}
 .services__box {
     position: relative;
 }
@@ -28,6 +31,7 @@
 }
 
 .services__text {
+    @extend %title;
     font-size: 14px;
     line-height: 1.15;
     letter-spacing: 0.03em;
@@ -37,5 +41,6 @@
 }
 
 .services__list {
+    @extend %clear-dec;
     flex-basis: calc((100% - var(--indent) * (3 - 1)) / 3);
 }
