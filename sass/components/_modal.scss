@@ -173,6 +173,8 @@
 }
 
 .agreement__submit {
+    @extend %btn;
+    @extend %btn-primary;
     display: block;
     margin: 0 auto;
     width: 200px;

@@ -1,3 +1,9 @@
+.services-section {
+    @include section(0, 94px);
+}
+.services-container {
+    @extend %container;
+}
 .services {
     padding-left: 0;
     margin-top: 0;

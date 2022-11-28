@@ -4,6 +4,7 @@ header {
 }
 
 .header-container {
+    @extend %container;
     display: flex;
     align-items: center;
 }

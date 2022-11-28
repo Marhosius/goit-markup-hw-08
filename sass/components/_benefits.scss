@@ -1,7 +1,9 @@
 .benefit-section {
-    padding-top: 94px;
+    @include section;
 }
-
+.benefit {
+    @extend %container;
+}
 .benefit__subtitle {
     font-size: 14px;
     text-transform: uppercase;

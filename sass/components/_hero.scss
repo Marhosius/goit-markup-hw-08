@@ -10,7 +10,9 @@
     padding-top: 200px;
     padding-bottom: 200px;
 }
-
+.hero {
+    @extend %container;
+}
 .hero__title {
     color: var(--color-onblack);
     font-weight: 900;
@@ -27,6 +29,8 @@
 }
 
 .hero__button {
+    @extend %btn;
+    @extend %btn-primary;
     display: block;
     min-width: 216px;
     min-height: 50px;

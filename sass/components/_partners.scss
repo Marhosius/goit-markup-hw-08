@@ -1,7 +1,9 @@
 .partners-section {
-    padding-top: 94px;
+    @include section;
 }
-
+.partners-container {
+    @extend %container;
+}
 .partners {
     display: flex;
     justify-content: center;
