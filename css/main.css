@@ -354,7 +354,16 @@ header {
   -webkit-transition: color var(--anim-default);
   transition: color var(--anim-default);
 }
-
+.navigation__studio:hover,
+.navigation__portfolio:hover,
+.navigation__kontact:hover {
+  color: var(--color-logo);
+}
+.navigation__studio:focus,
+.navigation__portfolio:focus,
+.navigation__kontact:focus {
+  color: var(--color-logo);
+}
 .navigation__studio::after,
 .navigation__portfolio::after,
 .navigation__kontact::after {
@@ -376,15 +385,6 @@ header {
 .navigation--current::after {
   -webkit-animation: up-opacity 0.5s ease-in 250ms forwards;
           animation: up-opacity 0.5s ease-in 250ms forwards;
-}
-
-.navigation__studio:hover,
-.navigation__portfolio:hover,
-.navigation__kontact:hover,
-.navigation__studio:focus,
-.navigation__portfolio:focus,
-.navigation__kontact:focus {
-  color: var(--color-logo);
 }
 
 .navigation__ul,
@@ -429,17 +429,18 @@ header {
   -webkit-transition: color var(--anim-default);
   transition: color var(--anim-default);
 }
+.contacts__tel:hover,
+.contacts__mail:hover {
+  color: var(--color-logo);
+}
+.contacts__tel:focus,
+.contacts__mail:focus {
+  color: var(--color-logo);
+}
 
 .contacts__mail-icon,
 .contacts__tel-icon {
   fill: currentColor;
-}
-
-.contacts__mail:hover,
-.contacts__mail:focus,
-.contacts__tel:hover,
-.contacts__tel:focus {
-  color: var(--color-logo);
 }
 
 .hero-section {
@@ -633,6 +634,9 @@ header {
   -webkit-transition: fill var(--anim-default), background-color var(--anim-default);
   transition: fill var(--anim-default), background-color var(--anim-default);
 }
+.social__reference:focus .socials__icon, .social__reference:hover .socials__icon {
+  fill: var(--color-onblack);
+}
 
 .social__reference {
   display: -webkit-box;
@@ -650,15 +654,11 @@ header {
   -webkit-transition: fill var(--anim-default), background-color var(--anim-default);
   transition: fill var(--anim-default), background-color var(--anim-default);
 }
-
-.social__reference:hover,
 .social__reference:focus {
   background-color: var(--color-hovbrd-btn-secondary);
 }
-
-.social__reference:hover .socials__icon,
-.social__reference:focus .socials__icon {
-  fill: var(--color-onblack);
+.social__reference:hover {
+  background-color: var(--color-hovbrd-btn-secondary);
 }
 
 .partners-section {
@@ -697,21 +697,20 @@ header {
   -webkit-transition: fill var(--anim-default), border-color var(--anim-default);
   transition: fill var(--anim-default), border-color var(--anim-default);
 }
+.partners__link:focus, .partners__link:hover {
+  border-color: var(--color-brd-btn-primery);
+}
 
 .partners__icon {
   fill: var(--color-socials-icon);
   -webkit-transition: fill var(--anim-default);
   transition: fill var(--anim-default);
 }
-
-.partners__link:hover .partners__icon,
 .partners__link:focus .partners__icon {
   fill: var(--color-brd-btn-primery);
 }
-
-.partners__link:hover,
-.partners__link:focus {
-  border-color: var(--color-brd-btn-primery);
+.partners__link:hover .partners__icon {
+  fill: var(--color-brd-btn-primery);
 }
 
 .section-portfolio {
@@ -788,6 +787,9 @@ header {
   -webkit-transition: top var(--anim-default);
   transition: top var(--anim-default);
 }
+.filter-list__item:hover .task__textbox {
+  top: 50%;
+}
 
 .task__overlay-text {
   text-align: left;
@@ -806,14 +808,9 @@ header {
   transition: box-shadow var(--anim-default);
   transition: box-shadow var(--anim-default), -webkit-box-shadow var(--anim-default);
 }
-
 .filter-list__item:hover {
   -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
-
-.filter-list__item:hover .task__textbox {
-  top: 50%;
 }
 
 .task__card {

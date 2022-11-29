@@ -63,6 +63,10 @@
 .socials__icon {
     fill: var(--color-socials-icon);
     transition: fill var(--anim-default), background-color var(--anim-default);
+    .social__reference:focus &,
+    .social__reference:hover & {
+            fill: var(--color-onblack);
+        }
 }
 
 .social__reference {
@@ -73,14 +77,20 @@
     height: 44px;
     border-radius: 50%;
     transition: fill var(--anim-default), background-color var(--anim-default);
+    &:focus {
+            background-color: var(--color-hovbrd-btn-secondary);
+        }
+    &:hover {
+            background-color: var(--color-hovbrd-btn-secondary);
+        }
 }
 
-.social__reference:hover,
-.social__reference:focus {
-    background-color: var(--color-hovbrd-btn-secondary);
-}
+// .social__reference:hover,
+// .social__reference:focus {
+//     background-color: var(--color-hovbrd-btn-secondary);
+// }
 
-.social__reference:hover .socials__icon,
-.social__reference:focus .socials__icon {
-    fill: var(--color-onblack);
-}
+// .social__reference:hover .socials__icon,
+// .social__reference:focus .socials__icon {
+//     fill: var(--color-onblack);
+// }

@@ -29,19 +29,30 @@
     offset: -1px;
     border-radius: 4px;
     transition: fill var(--anim-default), border-color var(--anim-default);
+
+    &:focus,&:hover {
+            border-color: var(--color-brd-btn-primery);
+        }
 }
 
 .partners__icon {
     fill: var(--color-socials-icon);
     transition: fill var(--anim-default);
+
+    .partners__link:focus & {
+            fill: var(--color-brd-btn-primery);
+        }
+    .partners__link:hover & {
+            fill: var(--color-brd-btn-primery);
+        }
 }
 
-.partners__link:hover .partners__icon,
-.partners__link:focus .partners__icon {
-    fill: var(--color-brd-btn-primery);
-}
+// .partners__link:hover .partners__icon,
+// .partners__link:focus .partners__icon {
+//     fill: var(--color-brd-btn-primery);
+// }
 
-.partners__link:hover,
-.partners__link:focus {
-    border-color: var(--color-brd-btn-primery);
-}
+// .partners__link:hover,
+// .partners__link:focus {
+//     border-color: var(--color-brd-btn-primery);
+// }

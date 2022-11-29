@@ -57,37 +57,58 @@ header {
     text-decoration: none;
     color: var(--color-title);
     transition: color var(--anim-default);
+    &:hover {
+            color: var(--color-logo);
+        }
+    &:focus {
+                    color: var(--color-logo);
+                }
+
+    &::after {
+        content: '';
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 4px;
+            bottom: 0;
+            left: 50%;
+            right: 50%;
+            transform: var(--transform-centre);
+            border-radius: 2px;
+            background-color: var(--color-logo);
+            opacity: 0;
+    }
 }
 
-.navigation__studio::after,
-.navigation__portfolio::after,
-.navigation__kontact::after {
-    content: '';
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 4px;
-    bottom: 0;
-    left: 50%;
-    right: 50%;
-    transform: var(--transform-centre);
-    border-radius: 2px;
-    background-color: var(--color-logo);
-    opacity: 0;
-}
+// .navigation__studio::after,
+// .navigation__portfolio::after,
+// .navigation__kontact::after {
+//     content: '';
+//     display: block;
+//     position: absolute;
+//     width: 100%;
+//     height: 4px;
+//     bottom: 0;
+//     left: 50%;
+//     right: 50%;
+//     transform: var(--transform-centre);
+//     border-radius: 2px;
+//     background-color: var(--color-logo);
+//     opacity: 0;
+// }
 
 .navigation--current::after {
     animation: up-opacity 0.5s ease-in 250ms forwards;
 }
 
-.navigation__studio:hover,
-.navigation__portfolio:hover,
-.navigation__kontact:hover,
-.navigation__studio:focus,
-.navigation__portfolio:focus,
-.navigation__kontact:focus {
-    color: var(--color-logo);
-}
+// .navigation__studio:hover,
+// .navigation__portfolio:hover,
+// .navigation__kontact:hover,
+// .navigation__studio:focus,
+// .navigation__portfolio:focus,
+// .navigation__kontact:focus {
+//     color: var(--color-logo);
+// }
 
 .navigation__ul,
 .contacts__tel,
@@ -120,6 +141,13 @@ header {
     padding-bottom: 32px;
     align-items: center;
     transition: color var(--anim-default);
+
+    &:hover {
+            color: var(--color-logo);
+        }
+    &:focus {
+            color: var(--color-logo);
+        }
 }
 
 .contacts__mail-icon,
@@ -127,9 +155,9 @@ header {
     fill: currentColor;
 }
 
-.contacts__mail:hover,
-.contacts__mail:focus,
-.contacts__tel:hover,
-.contacts__tel:focus {
-    color: var(--color-logo);
-}
+// .contacts__mail:hover,
+// .contacts__mail:focus,
+// .contacts__tel:hover,
+// .contacts__tel:focus {
+//     color: var(--color-logo);
+// }
