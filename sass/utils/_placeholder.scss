@@ -2,6 +2,10 @@
 @mixin section($pt: 94px,$pb: 94px) {
     padding-top: $pt;
     padding-bottom: $pb;
+    @media screen and (min-width: 1200px) {
+        padding-top: $pt;
+        padding-bottom: $pb;
+    }
 }
 
 %container {
@@ -10,6 +14,9 @@
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+    @media screen and (min-width: 1200px) {
+        
+    }
 }
 
 %clear-dec {

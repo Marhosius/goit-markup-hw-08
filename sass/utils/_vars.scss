@@ -14,8 +14,10 @@
     --color-hovbrd-btn-secondary: #2196F3;
     --color-socials-icon: #AFB1B8;
     --items: 4;
+    --items-tablet: 2;
     --indent: 30px;
     --flex-formula: calc((100% - var(--indent) * (var(--items) - 1)) / (var(--items)));
+    --flex-formula-tablet: calc((100% - var(--indent) * (var(--items-tablet) - 1)) / (var(--items-tablet)));
     /* Animations */
     --transform-centre: translateX(-50%) translateY(-50%);
     --anim-default: 250ms cubic-bezier(0.4, 0, 0.2, 1);
