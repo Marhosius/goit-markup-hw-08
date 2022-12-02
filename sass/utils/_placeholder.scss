@@ -1,21 +1,24 @@
 
-@mixin section($pt: 94px,$pb: 94px) {
+@mixin section($pt: 60px,$pb: 60px) {
     padding-top: $pt;
     padding-bottom: $pb;
     @media screen and (min-width: 1200px) {
-        padding-top: $pt;
-        padding-bottom: $pb;
+        padding-top: 94px;
+        padding-bottom: 94px;
     }
 }
 
 %container {
-    width: 1200px;
+    width: 480px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+    @media screen and (min-width: 768px) {
+            width: 768px;
+        }
     @media screen and (min-width: 1200px) {
-        
+        width: 1200px;
     }
 }
 
