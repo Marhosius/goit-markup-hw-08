@@ -9,7 +9,9 @@
     font-size: 14px;
     text-transform: uppercase;
     margin-bottom: 10px;
-    text-align: center;
+    @media screen and (max-width: 767px) {
+            text-align: center;
+        }
 }
 .benefit__title {
     @extend %text-hiden;
