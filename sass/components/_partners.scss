@@ -8,19 +8,33 @@
 .partners-container__title {
     @extend %title;
     @extend %uppertitle;
+    @media screen and (max-width: 1199px) {
+            font-size: 28px;
+            line-height: 1.18;
+        }
 }
 .partners {
     @extend %clear-dec;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 30px;
+    @media screen and (min-width: 1200px) {
+            flex-wrap: nowrap;
+        }
 }
 .partners__card {
     @extend %clear-dec;
+    flex-basis: calc((100% - 30px * 2 - 1) / 2);
+    
+        @media screen and (min-width: 768px) {
+            flex-basis: calc((100% - 30px * 3 - 1) / 3);
+        }
+    
 }
 .partners__link {
-    width: 170px;
+    width: 210px;
     height: 92px;
     display: flex;
     justify-content: center;
@@ -30,6 +44,14 @@
     border-radius: 4px;
     transition: fill var(--anim-default), border-color var(--anim-default);
 
+    @media screen and (min-width: 768px) {
+        width: 226px;
+        height: 92px;
+    }
+        @media screen and (min-width: 1200px) {
+            width: 170px;
+            height: 92px;
+        }
     &:focus,&:hover {
             border-color: var(--color-brd-btn-primery);
         }

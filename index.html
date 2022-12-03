@@ -139,28 +139,36 @@
           </ul>
         </div>
       </section>
-      <!-- Wtat we do -->
-      <!-- <section class="services-section">
+      <!-- Services -->
+      <section class="services-section">
         <div class="services-container">
           <h2 class="services-container__title">Чим ми займаємося</h2>
           <ul class="services">
             <li class="services__list">
               <div class="services__box">
                 <img
-                  src="./images/box1.jpg"
+                  srcset="
+                    ./images/services/img_1200x1.jpg 1x,
+                    ./images/services/img_1200x2.jpg 2x
+                  "
+                  src="./images/services/img_1200x1.jpg"
                   alt="фото нашої роботи"
                   width="370"
                   height="294"
                 />
                 <div class="services__textbox">
-                  <h3 class="ervices__text">Десктопні додатки</h3>
+                  <h3 class="services__text">Десктопні додатки</h3>
                 </div>
               </div>
             </li>
             <li class="services__list">
               <div class="services__box">
                 <img
-                  src="./images/box2.jpg"
+                  srcset="
+                    ./images/services/img_1200x1-1.jpg 1x,
+                    ./images/services/img_1200x2-1.jpg 2x
+                  "
+                  src="./images/services/img_1200x1-1.jpg"
                   alt="фото нашої роботи"
                   width="370"
                   height="294"
@@ -173,7 +181,11 @@
             <li class="services__list">
               <div class="services__box">
                 <img
-                  src="./images/box3.jpg"
+                  srcset="
+                    ./images/services/img_1200x1-2.jpg 1x,
+                    ./images/services/img_1200x2-2.jpg 2x
+                  "
+                  src="./images/services/img_1200x1-2.jpg"
                   alt="фото нашої роботи"
                   width="370"
                   height="294"
@@ -185,18 +197,44 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- OUR TEEM -->
-      <!-- <section class="team-section">
+      <section class="team-section">
         <div class="team-container">
           <h2 class="team-container__title">Наша команда</h2>
           <ul class="team">
             <li class="team__list">
-              <img
-                src="./images/imgIgor.jpg"
-                alt="Фото працівника"
-                width="270"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/teem/img_1200x1-1.jpg 1x,
+                    ./images/teem/img_1200x2-1.jpg 2x
+                  "
+                  sizes=""
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/teem/img_768x1-1.jpg 1x,
+                    ./images/teem/img_768x2-1.jpg 2x
+                  "
+                  sizes=""
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/teem/img_450x1-1.jpg 1x,
+                    ./images/teem/img_450x2-1.jpg 2x
+                  "
+                  sizes=""
+                />
+                <img
+                  src="./images/teem/img_450x1-1.jpg 1x"
+                  alt="Фото працівника"
+                  width="450"
+                />
+              </picture>
               <div class="team__card">
                 <h3 class="team__name">Ігор Дем'яненко</h3>
                 <p class="team__position">Product Designer</p>
@@ -257,11 +295,37 @@
               </div>
             </li>
             <li class="team__list">
-              <img
-                src="./images/imgolga.jpg"
-                alt="Фото працівника"
-                width="270"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/teem/img_1200x1-2.jpg 1x,
+                    ./images/teem/img_1200x2-2.jpg 2x
+                  "
+                  sizes=""
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/teem/img_768x1-2.jpg 1x,
+                    ./images/teem/img_768x2-2.jpg 2x
+                  "
+                  sizes=""
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/teem/img_450x1-2.jpg 1x,
+                    ./images/teem/img_450x2-2.jpg 2x
+                  "
+                  sizes=""
+                />
+                <img
+                  src="./images/teem/img_450x1-2.jpg 1x"
+                  alt="Фото працівника"
+                  width="450"
+                />
+              </picture>
               <div class="team__card">
                 <h3 class="team__name">Ольга Рєпіна</h3>
                 <p class="team__position">Frontend Developer</p>
@@ -322,11 +386,38 @@
               </div>
             </li>
             <li class="team__list">
-              <img
-                src="./images/imgmykola.jpg"
-                alt="Фото працівника"
-                width="270"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/teem/img_1200x1-3.jpg 1x,
+                    ./images/teem/img_1200x2-3.jpg 2x
+                  "
+                  sizes=""
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/teem/img_768x1-3.jpg 1x,
+                    ./images/teem/img_768x2-3.jpg 2x
+                  "
+                  sizes=""
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/teem/img_450x1-3.jpg 1x,
+                    ./images/teem/img_450x2-3.jpg 2x
+                  "
+                  sizes=""
+                />
+
+                <img
+                  src="./images/teem/img_450x1-3.jpg 1x"
+                  alt="Фото працівника"
+                  width="450"
+                />
+              </picture>
               <div class="team__card">
                 <h3 class="team__name">Микола Тарасов</h3>
                 <p class="team__position">Marketing</p>
@@ -387,11 +478,38 @@
               </div>
             </li>
             <li class="team__list">
-              <img
-                src="./images/imgmyhaylo.jpg"
-                alt="Фото працівника"
-                width="270"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/teem/img_1200x1-4.jpg 1x,
+                    ./images/teem/img_1200x2-4.jpg 2x
+                  "
+                  sizes=""
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/teem/img_768x1-4.jpg 1x,
+                    ./images/teem/img_768x2-4.jpg 2x
+                  "
+                  sizes=""
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/teem/img_450x1-4.jpg 1x,
+                    ./images/teem/img_450x2-4.jpg 2x
+                  "
+                  sizes=""
+                />
+
+                <img
+                  src="./images/teem/img_450x1-4.jpg 1x"
+                  alt="Фото працівника"
+                  width="450"
+                />
+              </picture>
               <div class="team__card">
                 <h3 class="team__name">Михайло Єрмаков</h3>
                 <p class="team__position">UI Designer</p>
@@ -453,9 +571,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- PARTNERS -->
-      <!-- <section class="partners-section">
+      <section class="partners-section">
         <div class="partners-container">
           <h2 class="partners-container__title">Постійні клієнти</h2>
           <div>
@@ -535,11 +653,11 @@
             </ul>
           </div>
         </div>
-      </section> -->
+      </section>
     </main>
-    <!-- <footer>
+    <footer>
       <div class="footer-container">
-        <div>
+        <div class="footer-container__contacts">
           <a class="logo logo-footer" href="./">
             <span class="logo__fw">Web</span>
             <span class="logo__swf">Studio</span>
@@ -631,16 +749,18 @@
                 placeholder="E-mail"
               />
             </label>
-            <button class="notification__button" type="submit">
-              Підписатися
-            </button>
-            <svg class="notification__icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-send"></use>
-            </svg>
+            <div class="notification__butn-wrap">
+              <button class="notification__button" type="submit">
+                Підписатися
+              </button>
+              <svg class="notification__icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </div>
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <!-- Modal window -->
     <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal is-animated" data-modal-anim>

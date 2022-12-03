@@ -1,8 +1,16 @@
 .services-section {
-    @include section(0, 94px);
+    display: none;
+    @media screen and (min-width: 1200px) {
+        @include section(0, 94px);
+        display: contents;
+        }
 }
 .services-container {
     @extend %container;
+}
+.services-container__title {
+    @extend %title;
+    @extend %uppertitle;
 }
 .services {
     padding-left: 0;
@@ -11,9 +19,9 @@
     display: flex;
     gap: var(--indent);
 }
-.services-container__title {
-    @extend %title;
-    @extend %uppertitle;
+.services__list {
+    display: block;
+    @extend %clear-dec;
 }
 .services__box {
     position: relative;
@@ -38,9 +46,4 @@
     text-align: center;
     text-transform: uppercase;
     color: var(--color-onblack);
-}
-
-.services__list {
-    @extend %clear-dec;
-    flex-basis: calc((100% - var(--indent) * (3 - 1)) / 3);
 }
