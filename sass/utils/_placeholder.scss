@@ -3,8 +3,8 @@
     padding-top: $pt;
     padding-bottom: $pb;
     @media screen and (max-width: 1199px) {
-        padding-left: 15px;
-        padding-right: 15px;
+        // padding-left: 15px;
+        // padding-right: 15px;
         }
     @media screen and (min-width: 1200px) {
         padding-top: 94px;
@@ -14,7 +14,7 @@
 }
 
 %container {
-    width: 480px;
+    min-width: 320px;
     margin-left: auto;
     margin-right: auto;
     @media screen and (min-width: 768px) {
