@@ -1,7 +1,6 @@
 .team-section {
     @include section;
     background-color: #F5F4FA;
-    padding-top: 94px;
 }
 .team-container {
     @extend %container;
@@ -10,6 +9,10 @@
 .team-container__title {
     @extend %title;
     @extend %uppertitle;
+    @media screen and (max-width: 1199px) {
+            font-size: 28px;
+            line-height: 1.18;
+        }
 }
 .team__card {
     padding-top: 30px;

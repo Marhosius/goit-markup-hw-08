@@ -125,14 +125,16 @@ address {
 }
 
 .notification {
-    width: 570px;
+    width: 450px;
 
     @media screen and (max-width: 1199px) {
             text-align: center;
+            
         }
                 @media screen and (min-width: 1199px) {
                     margin-left: auto;
                     margin-right: 0;
+                    width: 570px;
                 }
 }
 

@@ -7,6 +7,10 @@ header {
     @extend %container;
     display: flex;
     align-items: center;
+    @media screen and (max-width: 767px) {
+            padding-top: 16px;
+            padding-bottom: 16px;
+        }
 }
 
 /* -----------Logo----------- */

@@ -1,8 +1,10 @@
 .services-section {
     display: none;
     @media screen and (min-width: 1200px) {
-        @include section(0, 94px);
-        display: contents;
+        padding-top: 0;
+        padding-bottom: 94px;
+        display: block;
+        min-width: 1200px;
         }
 }
 .services-container {
