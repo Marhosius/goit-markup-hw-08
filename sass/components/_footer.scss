@@ -125,7 +125,11 @@ address {
 }
 
 .notification {
-    width: 450px;
+    width: auto;
+    @media screen and (min-width: 480px) {
+            width: 450px;
+    
+        }
 
     @media screen and (max-width: 1199px) {
             text-align: center;
@@ -167,7 +171,7 @@ address {
     bottom: 13px;
 }
 .notification__mail {
-    width: 450px;
+    width: auto;
     height: 50px;
     font-size: 16px;
     line-height: 1.25;
@@ -186,6 +190,10 @@ address {
         outline-offset: -1px;
         outline: 1px solid var(--color-logo);
     }
+         @media screen and (min-width: 480px) {
+             width: 450px;
+    
+         }
         @media screen and (min-width: 1199px) {
             width: 354px;
             margin-bottom: 0;
